@@ -1,0 +1,9 @@
+﻿@model Pagina1.Models.Datos
+@{
+    ViewData["Title"] = "Home Page";
+}
+<h1>Lista de contacto</h1>
+<h2>@Model.Nombre</h2>
+<p>Correo: @Model.Correo</p>
+<hr/>
+<a asp-action="Index">Volver</a>

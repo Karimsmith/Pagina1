@@ -1,0 +1,20 @@
+﻿@model Pagina1.Models.Datos
+@{
+    ViewData["Title"] = "Home Page";
+}
+<h1>Formulario de Contacto</h1>
+<p>
+    Por favor, dejar sus datos personales de contacto
+</p>
+<form asp-action="Contacto">
+     <div class="mb-3">
+         <label for="Correo" class="form-label">Correo electronico</label>
+         <input type="email" class="form-contro" id="correo" name="Correo">
+     </div>
+     <div class="mb-3">
+         <label for="Nombre" class="form-label">Nombre completo</label>
+         <input type="text" class="form-contro" id="nombre" name="Nombre">
+     </div>
+     <button type="submit" class="btn btn-prymary">Enviar</button>
+ </form>
+ <a asp-action="Ejemplo">Encargado</a>
